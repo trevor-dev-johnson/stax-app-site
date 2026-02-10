@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-stax-ink text-white antialiased;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(68, 199, 255, 0.18), transparent 32%),
+    radial-gradient(circle at 85% 0%, rgba(99, 243, 175, 0.12), transparent 28%),
+    linear-gradient(180deg, #0b1221 0%, #0a1020 55%, #080d19 100%);
+}
+
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(143, 162, 201, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(143, 162, 201, 0.12) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at center, black 25%, transparent 85%);
+}
