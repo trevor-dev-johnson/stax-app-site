@@ -11,17 +11,19 @@ export default function Home() {
       </div>
 
       {/* Header */}
-      <nav className="relative z-10 flex justify-between items-center max-w-3xl mx-auto px-6 py-12">
-        <Image
-          src="/staxLogo.png"
-          alt="Stax logo"
-          width={44}
-          height={44}
-          className="h-11 w-11 object-contain"
-          priority
-        />
-        <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">
-          Built for $SKR on Seeker
+      <nav className="relative z-10 flex items-center max-w-3xl mx-auto px-6 py-10">
+        <div className="flex items-center gap-4">
+          <Image
+            src="/staxLogo.png"
+            alt="Stax logo"
+            width={64}
+            height={64}
+            className="h-14 w-14 object-contain"
+            priority
+          />
+          <span className="text-xl font-semibold tracking-tight text-white">
+            Stax
+          </span>
         </div>
       </nav>
 
