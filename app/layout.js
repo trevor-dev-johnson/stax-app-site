@@ -17,6 +17,11 @@ export const metadata = {
   title: "Stax — Build Your Stax | Non-Custodial Seeker Dapp",
   description:
     "Stax is a non-custodial Seeker dapp that helps you build the habit of saving crypto. Read-only by design. No charts, no transaction signing, no speculation.",
+  icons: {
+    icon: "/staxLogo.png",
+    shortcut: "/staxLogo.png",
+    apple: "/staxLogo.png",
+  },
 };
 
 export default function RootLayout({ children }) {

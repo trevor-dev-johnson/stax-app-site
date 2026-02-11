@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,9 +12,14 @@ export default function Home() {
 
       {/* Header */}
       <nav className="relative z-10 flex justify-between items-center max-w-3xl mx-auto px-6 py-12">
-        <div className="text-xl font-bold tracking-tighter uppercase italic text-white">
-          Stax
-        </div>
+        <Image
+          src="/staxLogo.png"
+          alt="Stax logo"
+          width={44}
+          height={44}
+          className="h-11 w-11 object-contain"
+          priority
+        />
         <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">
           Built for $SKR on Seeker
         </div>
