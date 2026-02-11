@@ -1,94 +1,124 @@
-import SectionCard from '@/components/SectionCard';
-
-const corePillars = [
-  'Track your weekly momentum with clear progress snapshots',
-  'Build consistency through streak-based accountability',
-  'Compete fairly with growth-focused community leaderboards',
-  'Stay private by default, share only when you choose',
-];
-
-const whatStaxDoes = [
-  'Turns on-chain activity into a simple weekly habit loop',
-  'Rewards discipline and consistency over raw wallet size',
-  'Makes progress visible through transparent, easy-to-read metrics',
-  'Keeps the experience focused, calm, and non-speculative',
-];
-
-const whyItMatters = [
-  'Most crypto products optimize for attention and trading behavior',
-  'Stax optimizes for long-term habits and steady participation',
-  'Community rituals help users stay engaged without noisy gimmicks',
-  'A focused product makes it easier to keep showing up every week',
-];
+import React from "react";
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden">
-      <div className="grid-overlay pointer-events-none absolute inset-0 opacity-30" />
+    <main className="min-h-screen bg-[#050505] text-slate-200 selection:bg-orange-500/30 font-sans">
+      {/* Subtle Background Glow */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[-20%] left-[-10%] h-[600px] w-[600px] rounded-full bg-orange-600/5 blur-[120px]" />
+      </div>
 
-      <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-20 pt-16 md:px-10">
-        <p className="mb-4 w-fit rounded-full border border-stax-glow/50 bg-stax-glow/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-stax-glow">
+      {/* Header */}
+      <nav className="relative z-10 flex justify-between items-center max-w-3xl mx-auto px-6 py-12">
+        <div className="text-xl font-bold tracking-tighter uppercase italic text-white">
           Stax
-        </p>
-
-        <h1 className="max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">
-          A better way to build <span className="text-stax-accent">$SKR consistency</span>
-        </h1>
-        <p className="mt-5 max-w-2xl text-base text-stax-slate md:text-lg">
-          Stax helps people build long-term on-chain discipline through weekly progress, streaks, and community accountability.
-          It is designed to be simple, transparent, and focused on habits over hype.
-        </p>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          <SectionCard title="Core pillars">
-            <ul className="space-y-2">
-              {corePillars.map((item) => (
-                <li key={item} className="flex gap-2">
-                  <span className="mt-1 text-stax-accent">●</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </SectionCard>
-
-          <SectionCard title="What Stax does">
-            <ul className="space-y-2">
-              {whatStaxDoes.map((item) => (
-                <li key={item} className="flex gap-2">
-                  <span className="mt-1 text-stax-glow">●</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </SectionCard>
-
-          <SectionCard title="Why it matters">
-            <ul className="space-y-2">
-              {whyItMatters.map((item) => (
-                <li key={item} className="flex gap-2">
-                  <span className="mt-1 text-rose-300">●</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </SectionCard>
         </div>
+        <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">
+          Seeker Dapp Store
+        </div>
+      </nav>
 
-        <section className="mt-10 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-          <h2 className="text-xl font-semibold">The Stax Promise</h2>
-          <p className="mt-4 text-stax-slate">
-            Stax exists to make consistent participation in the ecosystem easier, clearer, and more meaningful. The product is
-            intentionally lightweight so users can focus on showing up, week after week.
-          </p>
-          <div className="mt-6 grid gap-4 text-sm text-stax-slate md:grid-cols-4">
-            {['Habit-first', 'Transparent', 'Community-driven', 'Built for consistency'].map((item) => (
-              <div key={item} className="rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-center">
-                {item}
-              </div>
-            ))}
-          </div>
-        </section>
+      {/* Hero */}
+      <section className="relative z-10 max-w-3xl mx-auto px-6 pt-12 pb-24">
+        <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white mb-8">
+          Build your <br />
+          <span className="text-orange-500">STAX.</span>
+        </h1>
+
+        <p className="max-w-xl text-xl md:text-2xl text-slate-400 leading-relaxed">
+          The non-custodial Seeker dapp that{" "}
+          <span className="text-slate-100">
+            turns saving into a habit of growth.
+          </span>
+        </p>
+
+        <p className="mt-6 text-sm uppercase tracking-[0.3em] text-white/30">
+          No charts. No price tracking. No speculation.
+        </p>
       </section>
+
+      {/* Read-Only Trust Section */}
+      <section className="relative z-10 max-w-3xl mx-auto px-6 py-16 border-t border-white/5">
+        <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-orange-500 mb-12">
+          Read-Only by Design
+        </h2>
+
+        <div className="grid gap-12">
+          <div>
+            <h3 className="text-2xl font-semibold text-white mb-4">
+              No transaction signing.
+            </h3>
+            <p className="text-slate-400 leading-relaxed">
+              Stax never requests permission to move funds or sign transactions.
+              It only reads your wallet balance to measure long-term growth.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 pt-8">
+            <div>
+              <h4 className="text-sm font-bold text-white uppercase mb-2">
+                Non-Custodial
+              </h4>
+              <p className="text-sm text-slate-500">
+                Your private keys remain inside Seeker’s secure element. Stax
+                never sees them.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-bold text-white uppercase mb-2">
+                Discipline First
+              </h4>
+              <p className="text-sm text-slate-500">
+                No charts or price watching. Only balance milestones and
+                consistency tracking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Framework */}
+      <section className="relative z-10 max-w-3xl mx-auto px-6 py-16 border-t border-white/5">
+        <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/30 mb-12">
+          The Framework
+        </h2>
+
+        <ul className="space-y-8">
+          <li className="flex items-start gap-6">
+            <span className="text-orange-500 font-mono pt-1 text-sm">01</span>
+            <p className="text-lg text-white">
+              Connect your wallet in read-only mode.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-6">
+            <span className="text-orange-500 font-mono pt-1 text-sm">02</span>
+            <p className="text-lg text-white">
+              Track progress toward your long-term stax.
+            </p>
+          </li>
+
+          <li className="flex items-start gap-6">
+            <span className="text-orange-500 font-mono pt-1 text-sm">03</span>
+            <p className="text-lg text-white">
+              Earn streaks for every week of consistent growth.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      {/* Footer */}
+      <footer className="relative z-10 max-w-3xl mx-auto px-6 py-24 border-t border-white/5">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-[10px] text-white/20 tracking-widest uppercase">
+            Built for the Solana Seeker Ecosystem
+          </p>
+          <p className="text-[10px] text-white/20 tracking-widest uppercase">
+            © 2026 Stax
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }
