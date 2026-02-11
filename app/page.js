@@ -2,10 +2,11 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#050505] text-slate-200 selection:bg-orange-500/30 font-sans">
-      {/* Subtle Background Glow */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[-20%] left-[-10%] h-[600px] w-[600px] rounded-full bg-orange-600/5 blur-[120px]" />
+    <main className="relative min-h-screen bg-[#070909] text-slate-200 selection:bg-[#39C997]/30 font-sans overflow-hidden">
+      {/* Layered Mint Glow */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute top-[-15%] left-[-10%] h-[700px] w-[700px] rounded-full bg-[#39C997]/8 blur-[140px]" />
+        <div className="absolute bottom-[-20%] right-[-10%] h-[600px] w-[600px] rounded-full bg-[#0A7D5B]/10 blur-[160px]" />
       </div>
 
       {/* Header */}
@@ -14,7 +15,7 @@ export default function Home() {
           Stax
         </div>
         <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">
-          Seeker Dapp Store
+          Built for $SKR on Seeker
         </div>
       </nav>
 
@@ -22,13 +23,15 @@ export default function Home() {
       <section className="relative z-10 max-w-3xl mx-auto px-6 pt-12 pb-24">
         <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white mb-8">
           Build your <br />
-          <span className="text-orange-500">STAX.</span>
+          <span className="text-[#39C997] drop-shadow-[0_0_18px_rgba(57,201,151,0.35)]">
+            STAX.
+          </span>
         </h1>
 
         <p className="max-w-xl text-xl md:text-2xl text-slate-400 leading-relaxed">
-          The non-custodial Seeker dapp that{" "}
+          A non-custodial Seeker dapp for $SKR holders —
           <span className="text-slate-100">
-            turns saving into a habit of growth.
+            turning saving into a habit of growth.
           </span>
         </p>
 
@@ -39,7 +42,7 @@ export default function Home() {
 
       {/* Read-Only Trust Section */}
       <section className="relative z-10 max-w-3xl mx-auto px-6 py-16 border-t border-white/5">
-        <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-orange-500 mb-12">
+        <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#39C997] mb-12">
           Read-Only by Design
         </h2>
 
@@ -50,7 +53,7 @@ export default function Home() {
             </h3>
             <p className="text-slate-400 leading-relaxed">
               Stax never requests permission to move funds or sign transactions.
-              It only reads your wallet balance to measure long-term growth.
+              It only reads your $SKR balance to measure long-term progress.
             </p>
           </div>
 
@@ -67,11 +70,11 @@ export default function Home() {
 
             <div>
               <h4 className="text-sm font-bold text-white uppercase mb-2">
-                Discipline First
+                Focused on $SKR
               </h4>
               <p className="text-sm text-slate-500">
-                No charts or price watching. Only balance milestones and
-                consistency tracking.
+                Purpose-built around $SKR to create shared growth milestones
+                within the Seeker ecosystem.
               </p>
             </div>
           </div>
@@ -86,23 +89,23 @@ export default function Home() {
 
         <ul className="space-y-8">
           <li className="flex items-start gap-6">
-            <span className="text-orange-500 font-mono pt-1 text-sm">01</span>
+            <span className="text-[#39C997] font-mono pt-1 text-sm">01</span>
             <p className="text-lg text-white">
               Connect your wallet in read-only mode.
             </p>
           </li>
 
           <li className="flex items-start gap-6">
-            <span className="text-orange-500 font-mono pt-1 text-sm">02</span>
+            <span className="text-[#39C997] font-mono pt-1 text-sm">02</span>
             <p className="text-lg text-white">
-              Track progress toward your long-term stax.
+              Track progress toward your long-term $SKR stax.
             </p>
           </li>
 
           <li className="flex items-start gap-6">
-            <span className="text-orange-500 font-mono pt-1 text-sm">03</span>
+            <span className="text-[#39C997] font-mono pt-1 text-sm">03</span>
             <p className="text-lg text-white">
-              Earn streaks for every week of consistent growth.
+              Earn streaks for every week of consistent accumulation.
             </p>
           </li>
         </ul>
@@ -112,7 +115,7 @@ export default function Home() {
       <footer className="relative z-10 max-w-3xl mx-auto px-6 py-24 border-t border-white/5">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[10px] text-white/20 tracking-widest uppercase">
-            Built for the Solana Seeker Ecosystem
+            Built for $SKR within the Solana Seeker Ecosystem
           </p>
           <p className="text-[10px] text-white/20 tracking-widest uppercase">
             © 2026 Stax
