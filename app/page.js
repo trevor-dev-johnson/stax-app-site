@@ -11,8 +11,8 @@ export default function Home() {
       </div>
 
       {/* Header */}
-      <nav className="relative z-10 flex items-center max-w-3xl mx-auto px-6 py-10">
-        <div className="flex items-center gap-4">
+      <nav className="relative z-10 flex items-center justify-between max-w-3xl mx-auto px-6 py-8">
+        <div className="flex items-center gap-3">
           <Image
             src="/staxLogo.png"
             alt="Stax logo"
@@ -21,14 +21,19 @@ export default function Home() {
             className="h-14 w-14 object-contain"
             priority
           />
-          <span className="text-xl font-semibold tracking-tight text-white">
+          <span className="text-lg font-semibold tracking-tight text-[#39C997]/80">
             Stax
           </span>
+        </div>
+
+        {/* Subtle right anchor */}
+        <div className="text-[10px] uppercase tracking-[0.3em] text-white/30">
+          Seeker Dapp
         </div>
       </nav>
 
       {/* Hero */}
-      <section className="relative z-10 max-w-3xl mx-auto px-6 pt-12 pb-24">
+      <section className="relative z-10 max-w-3xl mx-auto px-6 pt-8 pb-28">
         <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white mb-8">
           Build your <br />
           <span className="text-[#39C997] drop-shadow-[0_0_18px_rgba(57,201,151,0.35)]">
@@ -39,6 +44,7 @@ export default function Home() {
         <p className="max-w-xl text-xl md:text-2xl text-slate-400 leading-relaxed">
           A non-custodial Seeker dapp for $SKR holders —
           <span className="text-slate-100">
+            {" "}
             turning saving into a habit of growth.
           </span>
         </p>
@@ -50,7 +56,7 @@ export default function Home() {
 
       {/* Read-Only Trust Section */}
       <section className="relative z-10 max-w-3xl mx-auto px-6 py-16 border-t border-white/5">
-        <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#39C997] mb-12">
+        <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#39C997]/80 mb-12">
           Read-Only by Design
         </h2>
 
